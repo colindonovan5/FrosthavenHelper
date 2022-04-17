@@ -1,0 +1,143 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.menuIcon {
+    font-size: 60px;
+}
+
+.menuIconButton {
+    width: 70px;
+    height: 70px;
+    padding-right: 35px;
+}
+
+.overlay:hover:before {
+    opacity: 100%;
+}
+.toolbar {
+    height: 100px;
+}
+
+.overlay:before {
+    content: '\A';
+    position: absolute;
+    width: 80px; 
+    height: 80px;
+    border-radius: 80px;
+    background:rgba(0,0,0,0.2);
+    border: 1px solid white;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.elementButtons {
+    width: 80px;
+    position: relative;
+    vertical-align: top;
+    opacity: 80%;
+    cursor: pointer;
+    border-radius: 80px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.overlay {
+    margin: 5px;
+}
+
+.elementButtons:hover {
+    opacity: 1;
+}
+
+.iceFull {
+    background-color: #1ac2ec;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.iceHalf {
+    background: linear-gradient(180deg, rgb(0,0,0,0) 50%, #1ac2ec 50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.darkFull {
+    background-color: #1f2c35;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.darkHalf {
+    background: linear-gradient(180deg, rgb(0,0,0,0) 50%, #1f2c35 50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.lightFull {
+    background-color: #eeac1f;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.lightHalf {
+    background: linear-gradient(180deg, rgb(0,0,0,0) 50%, #eeac1f 50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.fireFull {
+    background-color: #e15323;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.fireHalf {
+    background: linear-gradient(180deg, rgb(0,0,0,0) 50%, #e15323 50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.earthFull {
+    background-color: #89a53d;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.earthHalf {
+    background: linear-gradient(180deg, rgb(0,0,0,0) 50%, #89a53d 50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.windFull {
+    background-color: #9ab0b7;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+
+}
+
+.windHalf {
+    background: linear-gradient(180deg, rgb(0,0,0,0) 50%, #9ab0b7 50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 1;
+}
+
+.elementEmpty {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 80%;
+}

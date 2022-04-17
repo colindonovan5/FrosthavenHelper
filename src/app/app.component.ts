@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ElementControllerService } from './element-controller.service';
+import { GloomhavenElement } from './gloomhaven-element.enum';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'FrosthavenHelper';
+  constructor(private _elementController: ElementControllerService) {}
+  title = 'Frosthaven Helper';
+
+  public get gloomhavenElement(): typeof GloomhavenElement {
+    return GloomhavenElement; 
+  }
+
+  chargeElement(element: GloomhavenElement) {
+    if(this._elementController.getElement(element) == 0) {
+      this._elementController.chargeElement(element);
+    } else {
+      this._elementController.consumeElement(element);
+    }
+  }
+
+  getElementState(element: GloomhavenElement): number {
+    return this._elementController.getElement(element);
+  }
+
 }
+
