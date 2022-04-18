@@ -1,0 +1,13 @@
+<div class="scenarioContainer">    
+    <div *ngFor="let entity of this.entityList">
+        <div *ngIf="isMonster(entity)">
+            <app-monster-card></app-monster-card>
+        </div>
+        <div *ngIf="isCharacter(entity)">
+            <app-character-card></app-character-card>
+        </div>
+    </div>
+
+
+
+</div>

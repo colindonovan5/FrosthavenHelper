@@ -1,4 +1,4 @@
-<p>
+<p class="toolbar-top">
   <mat-toolbar class="toolbar" color="primary">
     <button class="menuIconButton" mat-icon-button aria-label="Menu icon">
       <mat-icon class="menuIcon">menu</mat-icon>
@@ -6,7 +6,7 @@
     <span class="spacer"></span>
     <div class="overlay">
       <img 
-        class="elementButtons" 
+        class="elementButtons fireIcon" 
         (click)="chargeElement(gloomhavenElement.Fire)" 
         [ngClass]="{
           'fireFull': (getElementState(gloomhavenElement.Fire) == 2), 
@@ -78,4 +78,14 @@
     </div>
   </mat-toolbar>
 </p>
+<br><br><br><br>
 <router-outlet></router-outlet>
+<p class="toolbar-bottom">
+  <mat-toolbar class="toolbar" color="primary">
+    <button class="drawCardButton" mat-raised-button aria-label="Draw icon">
+      Draw <!--{{this._scenarioController.inCombat == 0 ? 'Draw' : 'Next'}}-->  
+    </button>
+    <span class="spacer"></span>
+    
+  </mat-toolbar>
+</p>

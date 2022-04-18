@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ElementControllerService } from './element-controller.service';
-import { GloomhavenElement } from './gloomhaven-element.enum';
+import { ElementControllerService } from './services/element-controller.service';
+import { GloomhavenElement } from './types/gloomhaven-element.enum';
 
 @Component({
   selector: 'app-root',

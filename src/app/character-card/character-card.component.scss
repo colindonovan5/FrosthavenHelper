@@ -1,0 +1,29 @@
+:host {
+    --stoneURL: url('../../assets/stone.jpg')
+}
+.characterCard {
+    margin: 2%;
+    height: 100%;
+    word-wrap: normal;
+    font-size: 20px;
+    background-color:rgb(0,0,0);
+    background-image:url(http://www.zingerbugimages.com/backgrounds/white_marble_background_seamless.jpg);
+    background-position:top left;
+    background-repeat:repeat;
+    background-attachment:fixed;
+}
+
+.background {
+    padding-top: 1%;
+}
+
+.ability-card {
+    object-fit: scale-down;
+
+}
+.portrait {
+    border-radius: 50px;
+    height: 100%;
+    display: inline;
+    margin-right: 20px;
+}
