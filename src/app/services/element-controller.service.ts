@@ -6,7 +6,9 @@ import { GloomhavenElement } from '../types/gloomhaven-element.enum';
 })
 export class ElementControllerService {
 
-  constructor() { }
+  constructor() { 
+
+  }
 
   private iceCharge = 0;
   private fireCharge = 0;

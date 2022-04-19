@@ -1,0 +1,82 @@
+<div>
+    <div>
+      <mat-toolbar class="toolbar" color="primary">
+        <button class="menuIconButton" mat-icon-button aria-label="Menu icon">
+          <mat-icon class="menuIcon">menu</mat-icon>
+        </button>
+        <span class="spacer"></span>
+        <div class="overlay">
+          <img 
+            class="elementButtons fireIcon" 
+            (click)="chargeElement(gloomhavenElement.Fire)" 
+            [ngClass]="{
+              'fireFull': (getElementState(gloomhavenElement.Fire) == 2), 
+              'fireHalf': (getElementState(gloomhavenElement.Fire) == 1),
+              'elementEmpty': (getElementState(gloomhavenElement.Fire) == 0)
+            }"  
+            src="assets/fireIconEmpty.png"
+          />
+        </div>
+        <div class="overlay">
+          <img 
+            class="elementButtons" 
+            (click)="chargeElement(gloomhavenElement.Ice)" 
+            [ngClass]="{
+              'iceFull': (getElementState(gloomhavenElement.Ice) == 2), 
+              'iceHalf': (getElementState(gloomhavenElement.Ice) == 1),
+              'elementEmpty': (getElementState(gloomhavenElement.Ice) == 0)
+            }" 
+            src="assets/iceIconEmpty.png"
+          />
+        </div>
+        <div class="overlay">
+          <img 
+            class="elementButtons" 
+            (click)="chargeElement(gloomhavenElement.Wind)" 
+            [ngClass]="{
+              'windFull': (getElementState(gloomhavenElement.Wind) == 2), 
+              'windHalf': (getElementState(gloomhavenElement.Wind) == 1),
+              'elementEmpty': (getElementState(gloomhavenElement.Wind) == 0)
+            }" 
+            src="assets/windIconEmpty.png"
+          />
+        </div>
+        <div class="overlay">
+          <img 
+            class="elementButtons" 
+            (click)="chargeElement(gloomhavenElement.Earth)" 
+            [ngClass]="{
+              'earthFull': (getElementState(gloomhavenElement.Earth) == 2), 
+              'earthHalf': (getElementState(gloomhavenElement.Earth) == 1),
+              'elementEmpty': (getElementState(gloomhavenElement.Earth) == 0)
+            }" 
+            src="assets/earthIconEmpty.png"
+          />
+        </div>
+        <div class="overlay">
+          <img 
+            class="elementButtons" 
+            (click)="chargeElement(gloomhavenElement.Light)" 
+            [ngClass]="{
+              'lightFull': (getElementState(gloomhavenElement.Light) == 2), 
+              'lightHalf': (getElementState(gloomhavenElement.Light) == 1),
+              'elementEmpty': (getElementState(gloomhavenElement.Light) == 0)
+            }"
+            src="assets/lightIconEmpty.png"
+          />
+        </div>
+        <div class="overlay">
+          <img 
+            class="elementButtons" 
+            (click)="chargeElement(gloomhavenElement.Dark)" 
+            [ngClass]="{
+                'darkFull': (getElementState(gloomhavenElement.Dark) == 2), 
+                'darkHalf': (getElementState(gloomhavenElement.Dark) == 1), 
+                'elementEmpty': (getElementState(gloomhavenElement.Dark) == 0)
+            }"
+            src="assets/darkIconEmpty.png"
+          />
+        </div>
+      </mat-toolbar>
+    </div>
+</div>

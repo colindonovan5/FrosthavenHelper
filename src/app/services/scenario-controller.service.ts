@@ -15,10 +15,14 @@ export class ScenarioControllerService {
   constructor() {
     this.scenarioDifficulty = 1;
     this.scenarioRound = 0;
+    
     this.characters = [];
     this.scenario = new Scenario();
     this.characters.push(new Character());
     this.scenario.scenarioMonsters.push(new Monster());
+    this.scenario.scenarioMonsters.push(new Monster());
+    this.scenario.scenarioMonsters.push(new Monster());
+    
   }
 
 

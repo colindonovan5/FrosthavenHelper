@@ -8,24 +8,9 @@ import { GloomhavenElement } from './types/gloomhaven-element.enum';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private _elementController: ElementControllerService) {}
+  constructor() {}
   title = 'Frosthaven Helper';
 
-  public get gloomhavenElement(): typeof GloomhavenElement {
-    return GloomhavenElement; 
-  }
-
-  chargeElement(element: GloomhavenElement) {
-    if(this._elementController.getElement(element) == 0) {
-      this._elementController.chargeElement(element);
-    } else {
-      this._elementController.consumeElement(element);
-    }
-  }
-
-  getElementState(element: GloomhavenElement): number {
-    return this._elementController.getElement(element);
-  }
 
 }
 

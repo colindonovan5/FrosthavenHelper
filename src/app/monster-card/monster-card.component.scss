@@ -1,36 +1,17 @@
-:host {
-    --stoneURL: url('../../assets/stone.jpg')
-}
 .monsterCard {
-    margin: 0.5%;
-    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
     word-wrap: normal;
     font-size: 20px;
 }
 
-.portrait {
-    border-radius: 50px;
-    transform: scale(2);
-    display: inline;
-    margin-right: 200px;
-}
-
-.ability-card {
-    object-fit: scale-down;
-    transform: scale(2.5);
-}
-
-
-.text {
-    display: inline;
-}
 .container {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.imgContainer {
-    width: 100%;
-    height: 100%;
+.portrait {
+ border-radius: 100%;    
 }
+

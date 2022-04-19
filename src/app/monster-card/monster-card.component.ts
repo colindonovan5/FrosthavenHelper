@@ -11,5 +11,5 @@ export class MonsterCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  imageURL = '../assets/Monsters/gloomhaven/gh-ooze.png';
 }

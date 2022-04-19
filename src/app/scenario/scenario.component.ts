@@ -4,6 +4,7 @@ import { Character } from '../types/character';
 import { Entity } from '../types/entity';
 import { Monster } from '../types/monster';
 
+declare var Tesseract;
 @Component({
   selector: 'app-scenario',
   templateUrl: './scenario.component.html',

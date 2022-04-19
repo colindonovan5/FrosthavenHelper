@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CharacterCardComponent implements OnInit {
 
   constructor() { }
+  
+  imageURL = '../assets/Monsters/gloomhaven/gh-ooze.png';
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
