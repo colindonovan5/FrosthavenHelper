@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Character } from '../types/character';
 import { Monster } from '../types/monster';
 import { Scenario } from '../types/scenario';
+import { MonsterControllerService } from './monster-controller.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,16 +13,14 @@ export class ScenarioControllerService {
   scenarioRound: number;
   characters: Character[];
 
-  constructor() {
+  constructor(monsterService: MonsterControllerService) {
     this.scenarioDifficulty = 1;
     this.scenarioRound = 0;
     
     this.characters = [];
     this.scenario = new Scenario();
     this.characters.push(new Character());
-    this.scenario.scenarioMonsters.push(new Monster("Bandit Archer", '../assets/Monsters/gloomhaven/gh-banditarcher.png', ['../assets/monster-ability-cards/gloomhaven/archer/ArcherAbilityCards.txt']));
-    this.scenario.scenarioMonsters.push(new Monster("Bandit Archer", '../assets/Monsters/gloomhaven/gh-frostdemon.png', ['../assets/monster-ability-cards/gloomhaven/archer/ArcherAbilityCards.txt']));
-
+    this.scenario.scenarioMonsters.push(monsterService.getMonster("Stone Golem", false, true, this.characters.length, this.scenarioDifficulty));
   }
 
 

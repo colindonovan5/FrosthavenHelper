@@ -1,5 +1,5 @@
-{
-  "AncientArtillery": {
+[
+  {
     "name": "Ancient Artillery",
     "lvl0": {
       "normal": {
@@ -138,7 +138,7 @@
       }
     }
   },
-  "BanditArcher": {
+  {
     "name": "Bandit Archer",
     "lvl0": {
       "normal": {
@@ -277,7 +277,7 @@
       }
     }
   },
-  "BanditGuard": {
+  {
     "name": "Bandit Guard",
     "lvl0": {
       "normal": {
@@ -426,7 +426,7 @@
       }
     }
   },
-  "BlackImp": {
+  {
     "name": "Black Imp",
     "lvl0": {
       "normal": {
@@ -592,7 +592,7 @@
       }
     }
   },
-  "CaveBear": {
+  {
     "name": "Cave Bear",
     "lvl0": {
       "normal": {
@@ -737,7 +737,7 @@
       }
     }
   },
-  "CityArcher": {
+  {
     "name": "City Archer",
     "lvl0": {
       "normal": {
@@ -899,7 +899,7 @@
       }
     }
   },
-  "CityGuard": {
+  {
     "name": "City Guard",
     "lvl0": {
       "normal": {
@@ -1065,7 +1065,7 @@
       }
     }
   },
-  "Cultist": {
+  {
     "name": "Cultist",
     "lvl0": {
       "normal": {
@@ -1212,7 +1212,7 @@
       }
     }
   },
-  "DeepTerror": {
+  {
     "name": "Deep Terror",
     "lvl0": {
       "normal": {
@@ -1371,7 +1371,7 @@
       }
     }
   },
-  "EarthDemon": {
+  {
     "name": "Earth Demon",
     "lvl0": {
       "normal": {
@@ -1518,7 +1518,7 @@
       }
     }
   },
-  "FlameDemon": {
+  {
     "name": "Flame Demon",
     "lvl0": {
       "normal": {
@@ -1709,7 +1709,7 @@
       }
     }
   },
-  "FrostDemon": {
+  {
     "name": "Frost Demon",
     "lvl0": {
       "normal": {
@@ -1868,7 +1868,7 @@
       }
     }
   },
-  "ForestImp": {
+  {
     "name": "Forest Imp",
     "lvl0": {
       "normal": {
@@ -2056,7 +2056,7 @@
       }
     }
   },
-  "GiantViper": {
+  {
     "name": "GiantViper",
     "lvl0": {
       "normal": {
@@ -2219,7 +2219,7 @@
       }
     }
   },
-  "HarrowerInfester": {
+  {
     "name": "Harrower Infester",
     "lvl0": {
       "normal": {
@@ -2378,7 +2378,7 @@
       }
     }
   },
-  "Hound": {
+  {
     "name": "Hound",
     "lvl0": {
       "normal": {
@@ -2537,7 +2537,7 @@
       }
     }
   },
-  "InoxArcher": {
+  {
     "name": "Inox Archer",
     "lvl0": {
       "normal": {
@@ -2680,7 +2680,7 @@
       }
     }
   },
-  "InoxGuard": {
+  {
     "name": "Inox Guard",
     "lvl0": {
       "normal": {
@@ -2835,7 +2835,7 @@
       }
     }
   },
-  "InoxShaman": {
+  {
     "name": "Inox Shaman",
     "lvl0": {
       "normal": {
@@ -2966,7 +2966,7 @@
       }
     }
   },
-  "LivingBones": {
+  {
     "name": "Living Bones",
     "lvl0": {
       "normal": {
@@ -3143,7 +3143,7 @@
       }
     }
   },
-  "LivingCorpse": {
+  {
     "name": "Living Corpse",
     "lvl0": {
       "normal": {
@@ -3286,7 +3286,7 @@
       }
     }
   },
-  "LivingSpirit": {
+  {
     "name": "Living Spirit",
     "lvl0": {
       "normal": {
@@ -3465,7 +3465,7 @@
       }
     }
   },
-  "Lurker": {
+  {
     "name": "Lurker",
     "lvl0": {
       "normal": {
@@ -3654,7 +3654,7 @@
       }
     }
   },
-  "Ooze": {
+  {
     "name": "Ooze",
     "lvl0": {
       "normal": {
@@ -3821,7 +3821,7 @@
       }
     }
   },
-  "NightDemon": {
+  {
     "name": "Night Demon",
     "lvl0": {
       "normal": {
@@ -3984,7 +3984,7 @@
       }
     }
   },
-  "RendingDrake": {
+  {
     "name": "Rending Drake",
     "lvl0": {
       "normal": {
@@ -4143,7 +4143,7 @@
       }
     }
   },
-  "SavvasIcestorm": {
+  {
     "name": "Savvas Icestorm",
     "lvl0": {
       "normal": {
@@ -4318,7 +4318,7 @@
       }
     }
   },
-  "SavvasLavaflow": {
+  {
     "name": "Savvas Lavaflow",
     "lvl0": {
       "normal": {
@@ -4486,7 +4486,7 @@
       }
     }
   },
-  "SpittingDrake": {
+  {
     "name": "Spitting Drake",
     "lvl0": {
       "normal": {
@@ -4662,7 +4662,7 @@
       }
     }
   },
-  "StoneGolem": {
+  {
     "name": "Stone Golem",
     "lvl0": {
       "normal": {
@@ -4823,7 +4823,7 @@
       }
     }
   },
-  "SunDemon": {
+  {
     "name": "Sun Demon",
     "lvl0": {
       "normal": {
@@ -5018,7 +5018,7 @@
       }
     }
   },
-  "VermlingScout": {
+  {
     "name": "Vermling Scout",
     "lvl0": {
       "normal": {
@@ -5149,7 +5149,7 @@
       }
     }
   },
-  "VermlingShaman": {
+  {
     "name": "Vermling Shaman",
     "lvl0": {
       "normal": {
@@ -5320,7 +5320,7 @@
       }
     }
   },
-  "WindDemon": {
+  {
     "name": "Wind Demon",
     "lvl0": {
       "normal": {
@@ -5503,4 +5503,4 @@
       }
     }
   }
-}
+]

@@ -1,50 +1,194 @@
-{
-  "AncientArtillery": "Ancient Artillery",
-  "BanditArcher": "Archer",
-  "BanditGuard": "Guard",
-  "BlackImp": "Imp",
-  "Boss": "Boss",
-  "BanditCommander": "Boss",
-  "TheBetrayer": "Boss",
-  "CaptainoftheGuard": "Boss",
-  "TheColorless": "Boss",
-  "DarkRider": "Boss",
-  "ElderDrake": "Boss",
-  "TheGloom": "Boss",
-  "InoxBodyguard": "Boss",
-  "Jekserah": "Boss",
-  "MercilessOverseer": "Boss",
-  "PrimeDemon": "Boss",
-  "TheSightless Eye": "Boss",
-  "WingedHorror": "Boss",
-  "CaveBear": "Cave Bear",
-  "CityArcher": "Archer",
-  "CityGuard": "Guard",
-  "Cultist": "Cultist",
-  "DeepTerror": "Deep Terror",
-  "EarthDemon": "Earth Demon",
-  "FlameDemon": "Flame Demon",
-  "ForestImp": "Imp",
-  "FrostDemon": "Frost Demon",
-  "GiantViper": "Giant Viper",
-  "HarrowerInfester": "Harrower Infester",
-  "Hound": "Hound",
-  "InoxArcher": "Archer",
-  "InoxGuard": "Guard",
-  "InoxShaman": "Shaman",
-  "LivingBones": "Living Bones",
-  "LivingCorpse": "Living Corpse",
-  "LivingSpirit": "Living Spirit",
-  "Lurker": "Lurker",
-  "NightDemon": "Night Demon",
-  "Ooze": "Ooze",
-  "RendingDrake": "Rending Drake",
-  "SavvasIcestorm": "Savvas Icestorm",
-  "SavvasLavaflow": "Savvas Lavaflow",
-  "SpittingDrake": "Spitting Drake",
-  "StoneGolem": "Stone Golem",
-  "SunDemon": "Sun Demon",
-  "VermlingScout": "Scout",
-  "VermlingShaman": "Shaman",
-  "WindDemon": "Wind Demon"
-}
+[
+  {
+    "class": "Ancient Artillery",
+    "name": "Ancient Artillery"
+  },
+  {
+    "class": "Archer",
+    "name": "Bandit Archer"
+  },
+  {
+    "class": "Guard",
+    "name": "Bandit Guard"
+  },
+  {
+    "class": "Imp",
+    "name": "Black Imp"
+  },
+  {
+    "class": "Boss",
+    "name": "Boss"
+  },
+  {
+    "class": "Boss",
+    "name": "Bandit Commander"
+  },
+  {
+    "class": "Boss",
+    "name": "The Betrayer"
+  },
+  {
+    "class": "Boss",
+    "name": "Captain of the Guard"
+  },
+  {
+    "class": "Boss",
+    "name": "The Colorless"
+  },
+  {
+    "class": "Boss",
+    "name": "Dark Rider"
+  },
+  {
+    "class": "Boss",
+    "name": "Elder Drake"
+  },
+  {
+    "class": "Boss",
+    "name": "The Gloom"
+  },
+  {
+    "class": "Boss",
+    "name": "Inox Bodyguard"
+  },
+  {
+    "class": "Boss",
+    "name": "Jekserah"
+  },
+  {
+    "class": "Boss",
+    "name": "Merciless Overseer"
+  },
+  {
+    "class": "Boss",
+    "name": "Prime Demon"
+  },
+  {
+    "class": "Boss",
+    "name": "The Sightless Eye"
+  },
+  {
+    "class": "Boss",
+    "name": "Winged Horror"
+  },
+  {
+    "class": "Cave Bear",
+    "name": "Cave Bear"
+  },
+  {
+    "class": "Archer",
+    "name": "City Archer"
+  },
+  {
+    "class": "Guard",
+    "name": "City Guard"
+  },
+  {
+    "class": "Cultist",
+    "name": "Cultist"
+  },
+  {
+    "class": "Deep Terror",
+    "name": "Deep Terror"
+  },
+  {
+    "class": "Earth Demon",
+    "name": "Earth Demon"
+  },
+  {
+    "class": "Flame Demon",
+    "name": "Flame Demon"
+  },
+  {
+    "class": "Imp",
+    "name": "Forest Imp"
+  },
+  {
+    "class": "Frost Demon",
+    "name": "Frost Demon"
+  },
+  {
+    "class": "Giant Viper",
+    "name": "Giant Viper"
+  },
+  {
+    "class": "Harrower Infester",
+    "name": "Harrower Infester"
+  },
+  {
+    "class": "Hound",
+    "name": "Hound"
+  },
+  {
+    "class": "Archer",
+    "name": "Inox Archer"
+  },
+  {
+    "class": "Guard",
+    "name": "Inox Guard"
+  },
+  {
+    "class": "Shaman",
+    "name": "Inox Shaman"
+  },
+  {
+    "class": "Living Bones",
+    "name": "Living Bones"
+  },
+  {
+    "class": "Living Corpse",
+    "name": "Living Corpse"
+  },
+  {
+    "class": "Living Spirit",
+    "name": "Living Spirit"
+  },
+  {
+    "class": "Lurker",
+    "name": "Lurker"
+  },
+  {
+    "class": "Night Demon",
+    "name": "Night Demon"
+  },
+  {
+    "Ooze": "Ooze",
+    "name": "Ooze"
+  },
+  {
+    "class": "Rending Drake",
+    "name": "Rending Drake"
+  },
+  {
+    "class": "Savvas Icestorm",
+    "name": "Savvas Icestorm"
+  },
+  {
+    "class": "Savvas Lavaflow",
+    "name": "Savvas Lavaflow"
+  },
+  {
+    "class": "Spitting Drake",
+    "name": "Spitting Drake"
+  },
+  {
+    "class": "Stone Golem",
+    "name": "Stone Golem"
+  },
+  {
+    "class": "Sun Demon",
+    "name": "Sun Demon"
+  },
+  {
+    "class": "Scout",
+    "name": "Vermling Scout"
+  },
+  {
+    "class": "Shaman",
+    "name": "Vermling Shaman"
+  },
+  {
+    "class": "Wind Demon",
+    "name": "Wind Demon"
+  }
+]

@@ -1,5 +1,5 @@
-{
-  "BanditCommander": {
+[
+  {
     "name": "Bandit Commander",
     "lvl0": {
       "health": "8xC",
@@ -146,7 +146,7 @@
       "notes": ""
     }
   },
-  "TheBetrayer": {
+  {
     "name": "The Betrayer",
     "lvl0": {
       "health": "10xC",
@@ -309,7 +309,7 @@
       "notes": ""
     }
   },
-  "CaptainoftheGuard": {
+  {
     "name": "Captain of the Guard",
     "lvl0": {
       "health": "7xC",
@@ -472,7 +472,7 @@
       "notes": ""
     }
   },
-  "TheColorless": {
+  {
     "name": "The Colorless",
     "lvl0": {
       "health": "9xC",
@@ -659,7 +659,7 @@
       "notes": ""
     }
   },
-  "DarkRider": {
+  {
     "name": "Dark Rider",
     "lvl0": {
       "health": "9xC",
@@ -838,7 +838,7 @@
       "notes": "X = Hexes moved"
     }
   },
-  "ElderDrake": {
+  {
     "name": "Elder Drake",
     "lvl0": {
       "health": "11xC",
@@ -1001,7 +1001,7 @@
       "notes": ""
     }
   },
-  "TheGloom": {
+  {
     "name": "The Gloom",
     "lvl0": {
       "health": "20xC",
@@ -1228,7 +1228,7 @@
       "notes": ""
     }
   },
-  "InoxBodyguard": {
+  {
     "name": "Inox Bodyguard",
     "lvl0": {
       "health": "6xC",
@@ -1407,7 +1407,7 @@
       "notes": "C = Number of Characters"
     }
   },
-  "Jekserah": {
+  {
     "name": "Jekserah",
     "lvl0": {
       "health": "6xC",
@@ -1586,7 +1586,7 @@
       "notes": ""
     }
   },
-  "MercilessOverseer": {
+  {
     "name": "Merciless Overseer",
     "lvl0": {
       "health": "6xC",
@@ -1741,7 +1741,7 @@
       "notes": "V = Number of Scouts present"
     }
   },
-  "PrimeDemon": {
+  {
     "name": "Prime Demon",
     "lvl0": {
       "health": "8xC",
@@ -1960,7 +1960,7 @@
       "notes": ""
     }
   },
-  "TheSightlessEye": {
+  {
     "name": "The Sightless Eye",
     "lvl0": {
       "health": "7xC",
@@ -2131,7 +2131,7 @@
       "notes": ""
     }
   },
-  "WingedHorror": {
+  {
     "name": "Winged Horror",
     "lvl0": {
       "health": "6xC",
@@ -2326,4 +2326,4 @@
       "notes": ""
     }
   }
-}
+]
