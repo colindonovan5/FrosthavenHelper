@@ -8,10 +8,11 @@ export class Monster {
     name: string;
     health: number;
     icon: string;
-    baseStats: MonsterBaseStatsNormal | MonsterBaseStatsBoss;
     monsterClass: MonsterClass;
     cards: MonsterCards;
     isBoss: boolean;
+    elite: boolean;
+    currentHealth?: number;
 
     constructor(name: string, icon: string, baseStats: MonsterBaseStatsNormal | MonsterBaseStatsBoss, monsterClass: MonsterClass, cards: MonsterCards, isBoss: boolean, scenarioDifficulty: number, playerCount: number, elite: boolean, currentHealth?: number) {
         this.name = name;
@@ -29,6 +30,11 @@ export class Monster {
                 this.health = challengeAdjustedStats.normal.health;
             }
         }
+        this.monsterClass = monsterClass;
+        this.cards = cards;
+        this.isBoss = isBoss;
+        this.elite = elite;
+        currentHealth ? this.currentHealth = currentHealth : '';
     }
 
     parseHealth(health: string, playerCount: number) {

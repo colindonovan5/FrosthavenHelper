@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonService } from 'src/app/services/json.service';
-import { ScenarioControllerService } from '../../services/scenario-controller.service';
+import { ScenarioService } from '../../services/scenario.service';
 import { Character } from '../../types/character';
 import { Entity } from '../../types/entity';
 import { Monster } from '../../types/monster';
@@ -13,7 +13,7 @@ declare var Tesseract;
 })
 export class ScenarioComponent implements OnInit {
 
-  constructor(private _scenarioController: ScenarioControllerService, private _jsonService: JsonService) { }
+  constructor(private _scenarioController: ScenarioService, private _jsonService: JsonService) { }
   entityList: (Monster | Character)[];
 
   ngOnInit(): void {

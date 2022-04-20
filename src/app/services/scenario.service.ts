@@ -2,25 +2,24 @@ import { Injectable } from '@angular/core';
 import { Character } from '../types/character';
 import { Monster } from '../types/monster';
 import { Scenario } from '../types/scenario';
-import { MonsterControllerService } from './monster-controller.service';
+import { CharacterService } from './character.service';
+import { MonsterService } from './monster.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ScenarioControllerService {
+export class ScenarioService {
   scenario: Scenario;
   scenarioDifficulty: number;
   scenarioRound: number;
   characters: Character[];
 
-  constructor(monsterService: MonsterControllerService) {
+  constructor(private _monsterService: MonsterService, private _characterService: CharacterService) {
     this.scenarioDifficulty = 1;
     this.scenarioRound = 0;
-    
-    this.characters = [];
+    this.characters = _characterService.characters;
     this.scenario = new Scenario();
-    this.characters.push(new Character());
-    this.scenario.scenarioMonsters.push(monsterService.getMonster("Stone Golem", false, true, this.characters.length, this.scenarioDifficulty));
+    console.log(this.addMonsterByName("The Gloom"));
   }
 
 
@@ -47,7 +46,19 @@ export class ScenarioControllerService {
     return this.scenarioDifficulty + 2;
   }
 
-  addCharacter(character: Character) {
-    this.characters.push(character);
+  addMonster(monster: Monster) {
+    let monsterToAdd = this._monsterService.getMonster(monster.name, monster.elite, this.scenarioDifficulty);
+    this.scenario.scenarioMonsters.push(monsterToAdd);
+    return monsterToAdd;
+  }
+
+  addMonsterByName(monsterName: string, elite?: boolean) {
+    if(elite == undefined) {
+      elite = false;
+    }
+
+    let monsterToAdd = this._monsterService.getMonster(monsterName, elite, this.scenarioDifficulty);
+    this.scenario.scenarioMonsters.push(monsterToAdd);
+    return monsterToAdd;
   }
 }

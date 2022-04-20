@@ -9,7 +9,7 @@ export class CharacterCardComponent implements OnInit {
 
   constructor() { }
   
-  imageURL = '../assets/Monsters/gloomhaven/gh-ooze.png';
+  imageURL = 'assets/Monsters/gloomhaven/gh-ooze.png';
 
   ngOnInit(): void {}
 
