@@ -1,5 +1,5 @@
 {
-  "Ancient Artillery": [
+  "AncientArtillery": [
     {
       "initiative": "46",
       "shuffle": false,
@@ -213,7 +213,7 @@
       ]
     }
   ],
-  "Cave Bear": [
+  "CaveBear": [
     {
       "initiative": "13",
       "shuffle": false,
@@ -358,7 +358,7 @@
       ]
     }
   ],
-  "Deep Terror": [
+  "DeepTerror": [
     {
       "initiative": "65",
       "shuffle": false,
@@ -439,7 +439,7 @@
       ]
     }
   ],
-  "Earth Demon": [
+  "EarthDemon": [
     {
       "initiative": "40",
       "shuffle": true,
@@ -513,7 +513,7 @@
       ]
     }
   ],
-  "Flame Demon": [
+  "FlameDemon": [
     {
       "initiative": "03",
       "shuffle": false,
@@ -592,7 +592,7 @@
       ]
     }
   ],
-  "Frost Demon": [
+  "FrostDemon": [
     {
       "initiative": "18",
       "shuffle": false,
@@ -666,7 +666,7 @@
       ]
     }
   ],
-  "Giant Viper": [
+  "GiantViper": [
     {
       "initiative": "32",
       "shuffle": true,
@@ -812,7 +812,7 @@
       ]
     }
   ],
-  "Harrower Infester": [
+  "HarrowerInfester": [
     {
       "initiative": "38",
       "shuffle": false,
@@ -1039,7 +1039,7 @@
       ]
     }
   ],
-  "Living Bones": [
+  "LivingBones": [
     {
       "initiative": "64",
       "shuffle": false,
@@ -1108,7 +1108,7 @@
       ]
     }
   ],
-  "Living Corpse": [
+  "LivingCorpse": [
     {
       "initiative": "21",
       "shuffle": false,
@@ -1178,7 +1178,7 @@
       ]
     }
   ],
-  "Living Spirit": [
+  "LivingSpirit": [
     {
       "initiative": "22",
       "shuffle": true,
@@ -1333,7 +1333,7 @@
       ]
     }
   ],
-  "Night Demon": [
+  "NightDemon": [
     {
       "initiative": "04",
       "shuffle": false,
@@ -1488,7 +1488,7 @@
       ]
     }
   ],
-  "Rending Drake": [
+  "RendingDrake": [
     {
       "initiative": "12",
       "shuffle": false,
@@ -1563,7 +1563,7 @@
       ]
     }
   ],
-  "Savvas Icestorm": [
+  "SavvasIcestorm": [
     {
       "initiative": "70",
       "shuffle": false,
@@ -1647,7 +1647,7 @@
       ]
     }
   ],
-  "Savvas Lavaflow": [
+  "SavvasLavaflow": [
     {
       "initiative": "97",
       "shuffle": false,
@@ -1873,7 +1873,7 @@
       ]
     }
   ],
-  "Spitting Drake": [
+  "SpittingDrake": [
     {
       "initiative": "32",
       "shuffle": false,
@@ -1949,7 +1949,7 @@
       ]
     }
   ],
-  "Stone Golem": [
+  "StoneGolem": [
     {
       "initiative": "11",
       "shuffle": false,
@@ -2021,7 +2021,7 @@
       ]
     }
   ],
-  "Sun Demon": [
+  "SunDemon": [
     {
       "initiative": "17",
       "shuffle": true,
@@ -2102,7 +2102,7 @@
       ]
     }
   ],
-  "Wind Demon": [
+  "WindDemon": [
     {
       "initiative": "09",
       "shuffle": false,
