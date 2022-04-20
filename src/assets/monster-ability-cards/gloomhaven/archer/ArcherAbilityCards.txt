@@ -1,8 +1,8 @@
-{Move + 1, Attack - 1},
+[{Move +1, Attack -1},
 {Move + 0, Attack + 0},
 {Move + 0, Attack + 1, Range - 1},
 {Move - 1, Attack + 1},
 {Attack - 1, Target + 2},
 {Attack + 1, Range + 1},
 {Move - 1, Attack - 1, Create a 3 damage trap in an adjacent empty hex closest to an enemy},
-{Move + 0, Attack - 1, Range + 1, Immobilize}
+{Move + 0, Attack - 1, Range + 1, Immobilize}]

@@ -1,13 +1,13 @@
-import { Condition } from "./condition";
-import { Entity } from "./entity";
+import { Condition } from "src/app/types/condition";
+import { Monster } from "src/app/types/monster";
 
-export class Monster implements Entity {
+export class BanditArcher extends Monster {
+
+
     constructor(name: string, icon: string, abilities: string[]) {
-        this.name = name;
-        this.icon = icon;
-        this.abilities = this.abilities;
+        super(name, icon, abilities);
     }
-    
+
     name: string;
     initiative: number;
     conditions: Condition[];

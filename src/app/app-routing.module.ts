@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ScenarioComponent } from './scenario/scenario.component';
+import { ScenarioComponent } from './components/scenario/scenario.component';
 
 const routes: Routes = [
   {path: '', component: ScenarioComponent}

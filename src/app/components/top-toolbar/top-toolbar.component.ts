@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ElementControllerService } from '../services/element-controller.service';
-import { GloomhavenElement } from '../types/gloomhaven-element.enum';
+import { ElementControllerService } from '../../services/element-controller.service';
+import { GloomhavenElement } from '../../types/gloomhaven-element.enum';
 
 @Component({
   selector: 'app-top-toolbar',

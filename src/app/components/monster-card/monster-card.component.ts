@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Monster } from '../../types/monster';
 
 @Component({
   selector: 'app-monster-card',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonsterCardComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  monster: Monster;
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
-  imageURL = '../assets/Monsters/gloomhaven/gh-ooze.png';
 }

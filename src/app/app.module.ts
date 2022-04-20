@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { CharacterCardComponent } from './character-card/character-card.component';
-import { ScenarioComponent } from './scenario/scenario.component';
-import { MonsterCardComponent } from './monster-card/monster-card.component';
+import { CharacterCardComponent } from './components/character-card/character-card.component';
+import { ScenarioComponent } from './components/scenario/scenario.component';
+import { MonsterCardComponent } from './components/monster-card/monster-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TopToolbarComponent } from './top-toolbar/top-toolbar.component';
-import { BottomToolbarComponent } from './bottom-toolbar/bottom-toolbar.component';
+import { TopToolbarComponent } from './components/top-toolbar/top-toolbar.component';
+import { BottomToolbarComponent } from './components/bottom-toolbar/bottom-toolbar.component';
 
 
 @NgModule({

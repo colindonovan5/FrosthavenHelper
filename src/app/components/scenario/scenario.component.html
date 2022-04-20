@@ -1,7 +1,7 @@
 <div class="scenarioContainer row">    
     <div class="row justify-content-center" *ngFor="let entity of this.entityList">
         <div class="col-lg-8" *ngIf="isMonster(entity)">
-            <app-monster-card></app-monster-card>
+            <app-monster-card [monster]="entity"></app-monster-card>
         </div>
         <div class="col-lg-8 " *ngIf="isCharacter(entity)">
             <app-character-card></app-character-card>

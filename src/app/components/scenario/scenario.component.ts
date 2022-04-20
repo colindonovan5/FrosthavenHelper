@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ScenarioControllerService } from '../services/scenario-controller.service';
-import { Character } from '../types/character';
-import { Entity } from '../types/entity';
-import { Monster } from '../types/monster';
+import { JsonService } from 'src/app/services/json.service';
+import { ScenarioControllerService } from '../../services/scenario-controller.service';
+import { Character } from '../../types/character';
+import { Entity } from '../../types/entity';
+import { Monster } from '../../types/monster';
 
 declare var Tesseract;
 @Component({
@@ -12,7 +13,7 @@ declare var Tesseract;
 })
 export class ScenarioComponent implements OnInit {
 
-  constructor(private _scenarioController: ScenarioControllerService) { }
+  constructor(private _scenarioController: ScenarioControllerService, private _jsonService: JsonService) { }
   entityList: (Monster | Character)[];
 
   ngOnInit(): void {

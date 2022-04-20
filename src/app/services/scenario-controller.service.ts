@@ -19,10 +19,9 @@ export class ScenarioControllerService {
     this.characters = [];
     this.scenario = new Scenario();
     this.characters.push(new Character());
-    this.scenario.scenarioMonsters.push(new Monster());
-    this.scenario.scenarioMonsters.push(new Monster());
-    this.scenario.scenarioMonsters.push(new Monster());
-    
+    this.scenario.scenarioMonsters.push(new Monster("Bandit Archer", '../assets/Monsters/gloomhaven/gh-banditarcher.png', ['../assets/monster-ability-cards/gloomhaven/archer/ArcherAbilityCards.txt']));
+    this.scenario.scenarioMonsters.push(new Monster("Bandit Archer", '../assets/Monsters/gloomhaven/gh-frostdemon.png', ['../assets/monster-ability-cards/gloomhaven/archer/ArcherAbilityCards.txt']));
+
   }
 
 
