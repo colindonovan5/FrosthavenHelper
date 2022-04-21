@@ -15,17 +15,13 @@ export class ScenarioService {
   characters: Character[];
 
   constructor(private _monsterService: MonsterService, private _characterService: CharacterService) {
-    this.scenarioDifficulty = 0;
+    this.scenarioDifficulty = 7;
     this.scenarioRound = 0;
     this.characters = _characterService.characters;
     this.scenario = new Scenario();
     console.log(this.addMonsterByName("The Sightless Eye"));
     console.log(this.addMonsterByName("Merciless Overseer"));
     console.log(this.addMonsterByName("The Gloom"));
-    console.log(this.addMonsterByName("Dark Rider"));
-    console.log(this.addMonsterByName("Bandit Archer"));
-    console.log(this.addMonsterByName('The Gloom'));
-
   }
 
 

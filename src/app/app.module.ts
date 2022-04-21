@@ -12,6 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TopToolbarComponent } from './components/top-toolbar/top-toolbar.component';
 import { BottomToolbarComponent } from './components/bottom-toolbar/bottom-toolbar.component';
+import { MonsterAbilityCardComponent } from './components/monster-ability-card/monster-ability-card.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BottomToolbarComponent } from './components/bottom-toolbar/bottom-toolb
     ScenarioComponent,
     MonsterCardComponent,
     TopToolbarComponent,
-    BottomToolbarComponent
+    BottomToolbarComponent,
+    MonsterAbilityCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+.ability-card {
+    background-image: url("../../../assets/MonsterAbilityCard/MonsterAbilityCardFront.jpg");
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;  
+    height: 100%;
+    width: 100%;
+}
+
+.abilityLine {
+    font-family: 'Sakkal Majalla';
+    font-size: 2vw;
+    color: white;
+    margin: auto;
+    
+}
+
+.abilitySubtitle {
+    font-family: 'Sakkal Majalla';
+    font-size: 1vw;
+    color: white;
+    margin: auto;
+    padding-top: 0px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 12%;
+}

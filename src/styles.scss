@@ -3,6 +3,16 @@
 html, body { height: 100%; background-color: lightgray; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
+@font-face {
+    font-family: "PirataOne";
+    src: local("PirataOne-Gloomhaven"), url(./assets/fonts/PirataOne-Gloomhaven.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Sakkal Majalla";
+    src: local("majalla"), url(./assets/fonts/majalla.ttf) format("truetype");
+}
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;

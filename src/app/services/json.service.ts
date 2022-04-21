@@ -32,7 +32,7 @@ export class JsonService {
     console.log(this.getMonsterBaseStatsByName("City Guard"))
     console.log(this.getMonsterClassByName('Jekserah'))
     console.log(this.getMonsterCardContentsByName('Ooze'))
-    console.log(this.getScenarioByNumber(65));
+    console.log(this.getScenarioByNumber(65).decks);
   }
 
   getMonsterBaseStats(monster: Monster) {
