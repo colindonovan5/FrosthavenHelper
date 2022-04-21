@@ -11,14 +11,15 @@ export class MonsterService {
 
   getMonster(monsterName: string, elite: boolean, scenarioDifficulty: number, currentHealth?: number) {
     let baseStats = this._json.getMonsterBaseStatsByName(monsterName);
-    let monsterClass = this._json.getMonsterClassByName(monsterName);
+    let monsterClass = this._json.getMonsterClassByName(monsterName).class;
     let monsterNameFormatted = monsterName.toLowerCase().replaceAll(' ', '');
     let iconPath = 'assets/Monsters/gloomhaven/gh-' + monsterNameFormatted + '.png';
-    let isBoss = monsterClass.class == 'Boss';
-    let cardContents = this._json.getMonsterCardContentsByName(monsterName); 
+    let isBoss = monsterClass == 'Boss';
+    let cardContents = this._json.getMonsterCardContentsByName(monsterClass); 
     if(isBoss) {
       cardContents = this._json.getMonsterCardContentsByName('Boss'); 
     }
+    
     return new Monster(monsterName, iconPath, baseStats, monsterClass, cardContents, isBoss, scenarioDifficulty, this._characterService.getCharacterCount(), elite, currentHealth);
   }
 }

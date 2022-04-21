@@ -3,7 +3,7 @@ import { ElementControllerService } from '../../services/element-controller.serv
 import { GloomhavenElement } from '../../types/gloomhaven-element.enum';
 
 @Component({
-  selector: 'app-top-toolbar',
+  selector: 'top-toolbar',
   templateUrl: './top-toolbar.component.html',
   styleUrls: ['./top-toolbar.component.scss']
 })

@@ -1,11 +1,17 @@
-<div class="ability-card col"> 
-    <div class="row wrapper">
-        <div class="abilityLine row justify-content-center align-self-center">Heal 5</div>
-        <div class="abilitySubtitle row justify-content-center align-self-center">Self</div>
-        <div class="abilityLine row justify-content-center align-self-center">Move 5</div>
-        <div class="abilityLine row justify-content-center align-self-center">Move 5</div>
-        <div class="abilityLine row justify-content-center align-self-center">Move 5</div>
-
-    
+<div class="ability-card"> 
+    <div class="row wrapper" [ngStyle]="{'background-image': this.getCurrentBackground(this.statCardInitiative), 'border-radius': '10px', 'background-size': '100% 100%'}" >
+        <ng-container *ngFor="let cardLine of this.cardLines">
+            <div *ngIf="cardLine.line" class="abilityLine centered row justify-content-center align-self-center">
+                {{cardLine.line}}        
+                <div *ngIf="cardLine.subtitle && cardLine.line" class="abilitySubtitle row justify-content-center">
+                    <span class="justify-content-center centered" *ngFor="let subtitle of cardLine.subtitle">
+                        <span>{{subtitle}}</span>
+                    </span>
+                </div>
+            </div>
+            <div *ngIf="cardLine.subtitle && !cardLine.line " class="abilitySubtitleStandalone centered row justify-content-center">
+                <span>{{cardLine.subtitle}}</span>
+            </div>
+        </ng-container>
     </div>
-    </div>
+</div>

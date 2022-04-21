@@ -7,7 +7,7 @@ import { Monster } from '../../types/monster';
 
 declare var Tesseract;
 @Component({
-  selector: 'app-scenario',
+  selector: 'scenario',
   templateUrl: './scenario.component.html',
   styleUrls: ['./scenario.component.scss']
 })

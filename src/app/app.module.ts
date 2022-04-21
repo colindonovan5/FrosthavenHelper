@@ -23,7 +23,7 @@ import { MonsterAbilityCardComponent } from './components/monster-ability-card/m
     MonsterCardComponent,
     TopToolbarComponent,
     BottomToolbarComponent,
-    MonsterAbilityCardComponent
+    MonsterAbilityCardComponent,
   ],
   imports: [
     BrowserModule,

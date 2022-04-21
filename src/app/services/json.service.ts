@@ -29,10 +29,6 @@ export class JsonService {
     this.monsterClassData = MonsterClassContentJSON;
     this.scenarioData = ScenarioListJSON;
 
-    console.log(this.getMonsterBaseStatsByName("City Guard"))
-    console.log(this.getMonsterClassByName('Jekserah'))
-    console.log(this.getMonsterCardContentsByName('Ooze'))
-    console.log(this.getScenarioByNumber(65).decks);
   }
 
   getMonsterBaseStats(monster: Monster) {
@@ -73,6 +69,10 @@ export class JsonService {
     let monsterCardContents: MonsterCards;
 
     monsterCardContents = this.monsterCardData.find(m => m.name == monsterName)
+
+    if(monsterCardContents == undefined) {
+      throw 'Card contents not found: ' + monsterName;
+    }
     
     return monsterCardContents;
   }

@@ -19,9 +19,13 @@ export class ScenarioService {
     this.scenarioRound = 0;
     this.characters = _characterService.characters;
     this.scenario = new Scenario();
-    console.log(this.addMonsterByName("The Sightless Eye"));
-    console.log(this.addMonsterByName("Merciless Overseer"));
-    console.log(this.addMonsterByName("The Gloom"));
+
+    this.addMonsterByName("City Guard");
+    this.addMonsterByName("Cave Bear");
+    this.addMonsterByName("Ooze");
+    this.addMonsterByName("Bandit Archer");
+    this.addMonsterByName("Giant Viper");
+
   }
 
 
@@ -58,7 +62,6 @@ export class ScenarioService {
     if(elite == undefined) {
       elite = false;
     }
-
     let monsterToAdd = this._monsterService.getMonster(monsterName, elite, this.scenarioDifficulty);
     this.scenario.scenarioMonsters.push(monsterToAdd);
     return monsterToAdd;

@@ -1,4 +1,4 @@
-import { MonsterCards, MonsterClass } from "./card-content";
+import { Card, MonsterCards, MonsterClass } from "./card-content";
 import { Condition } from "./condition";
 import { Entity } from "./entity";
 import { BossStats, MonsterBaseStatsBoss, MonsterBaseStatsNormal, MonsterStats } from "./monster-base-stats";
@@ -8,8 +8,8 @@ export class Monster {
     name: string;
     health: number;
     icon: string;
-    monsterClass: MonsterClass;
-    cards: MonsterCards;
+    monsterClass: string;
+    cards: Card[];
     isBoss: boolean;
     elite: boolean;
     immunities?: string[];
@@ -19,11 +19,10 @@ export class Monster {
     move: number;
     attributes?: string[];
 
-    constructor(name: string, icon: string, baseStats: MonsterBaseStatsNormal | MonsterBaseStatsBoss, monsterClass: MonsterClass, cards: MonsterCards, isBoss: boolean, scenarioDifficulty: number, playerCount: number, elite: boolean, currentHealth?: number) {
+    constructor(name: string, icon: string, baseStats: MonsterBaseStatsNormal | MonsterBaseStatsBoss, monsterClass: string, cards: MonsterCards, isBoss: boolean, scenarioDifficulty: number, playerCount: number, elite: boolean, currentHealth?: number) {
         this.name = name;
         this.icon = icon;
-        this.cards = cards;
-
+        this.cards = cards.cards;
         this.setStats(isBoss, baseStats, scenarioDifficulty, playerCount, elite);
         
         this.monsterClass = monsterClass;
@@ -39,12 +38,12 @@ export class Monster {
             let challengeAdjustedStats = this.getChallengeLevelBoss(scenarioDifficulty, stats);
             this.health = this.parseHealth(challengeAdjustedStats.health, playerCount)
             this.immunities = challengeAdjustedStats.immunities;
-            this.cards.cards[0].rules = challengeAdjustedStats.special2;
-            this.cards.cards[1].rules = challengeAdjustedStats.special2;
-            this.cards.cards[2].rules = challengeAdjustedStats.special2;
-            this.cards.cards[3].rules = challengeAdjustedStats.special1;
-            this.cards.cards[4].rules = challengeAdjustedStats.special1;
-            this.cards.cards[5].rules = challengeAdjustedStats.special1;
+            this.cards[0].rules = challengeAdjustedStats.special2;
+            this.cards[1].rules = challengeAdjustedStats.special2;
+            this.cards[2].rules = challengeAdjustedStats.special2;
+            this.cards[3].rules = challengeAdjustedStats.special1;
+            this.cards[4].rules = challengeAdjustedStats.special1;
+            this.cards[5].rules = challengeAdjustedStats.special1;
             this.attack = this.parseAttack(challengeAdjustedStats.attack, playerCount, challengeAdjustedStats);
             this.range = challengeAdjustedStats.range;
             this.move = challengeAdjustedStats.move;
@@ -76,8 +75,6 @@ export class Monster {
         } else if(attack.includes('+X')) {
             return attack.substring(0, attack.indexOf('+')) + ' + X';
         } else if(attack.includes('+C')) {
-            console.log('wenis');
-
             return parseInt(attack.substring(0, attack.indexOf('+'))) + playerCount;
         } else if(attack.includes('C')) {
             return playerCount;

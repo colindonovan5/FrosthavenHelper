@@ -13,3 +13,8 @@ export interface MonsterClass {
     class?: string;    
     name: string;
 }
+
+export class CardLine {
+    line?: string;
+    subtitle?: string[];
+}

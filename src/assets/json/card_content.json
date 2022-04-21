@@ -140,9 +140,8 @@
         "rules": [
           "* %move% -1",
           "* %attack% -1",
-          null,
           "** %range% +0",
-          "* <span class='small'> Create a 3 damage trap in an adjacent empty hex closest to an enemy </span>"
+          "* Create a 3 damage trap in an adjacent empty hex closest to an enemy"
         ]
       },
       {
@@ -1514,7 +1513,7 @@
         "shuffle": true,
         "rules": [
           "* Ooze suffers 2 damage ",
-          "** <span class='small'>Summons normal Ooze with a hit point value equal to the summoning Ooze's current hit point value (limited by a normal Ooze's specified maximum hit point value)</span>"
+          "** Summons normal Ooze with a hp equal to the summoning Ooze's current hp value"
         ]
       },
       {
@@ -1522,14 +1521,14 @@
         "shuffle": true,
         "rules": [
           "* Ooze suffers 2 damage ",
-          "** <span class='small'>Summons normal Ooze with a hit point value equal to the summoning Ooze's current hit point value (limited by a normal Ooze's specified maximum hit point value)</span>"
+          "** Summons normal Ooze with a hp equal to the summoning Ooze's current hp value"
         ]
       },
       {
         "initiative": "85",
         "shuffle": false,
         "rules": [
-          "* %push% 1 and",
+          "* %push% 1",
           "* %poison%",
           "** Target all adjacent enemies",
           "* %attack% +1",
