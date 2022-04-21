@@ -8,7 +8,7 @@ export class CharacterService {
   characters: Character[] = [];
 
   constructor() { 
-    this.characters.push(new Character());
+    this.addCharacter(new Character());    
   }
 
   addCharacter(character: Character) {
