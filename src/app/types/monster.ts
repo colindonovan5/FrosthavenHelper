@@ -18,6 +18,7 @@ export class Monster {
     range: number;
     move: number;
     attributes?: string[];
+    initiative: number;
 
     constructor(name: string, icon: string, baseStats: MonsterBaseStatsNormal | MonsterBaseStatsBoss, monsterClass: string, cards: MonsterCards, isBoss: boolean, scenarioDifficulty: number, playerCount: number, elite: boolean, currentHealth?: number) {
         this.name = name;
@@ -44,6 +45,12 @@ export class Monster {
             this.cards[3].rules = challengeAdjustedStats.special1;
             this.cards[4].rules = challengeAdjustedStats.special1;
             this.cards[5].rules = challengeAdjustedStats.special1;
+            for(let i = 0; i < 6; i++) {
+                for(let j = 0; j < this.cards[i].rules.length; j++) {
+                    if(!this.cards[i].rules[j].includes('*'))
+                    this.cards[i].rules[j] = '* ' + this.cards[i].rules[j];
+                }
+            }
             this.attack = this.parseAttack(challengeAdjustedStats.attack, playerCount, challengeAdjustedStats);
             this.range = challengeAdjustedStats.range;
             this.move = challengeAdjustedStats.move;

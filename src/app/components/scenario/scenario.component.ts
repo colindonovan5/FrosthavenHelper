@@ -13,22 +13,18 @@ declare var Tesseract;
 })
 export class ScenarioComponent implements OnInit {
 
-  constructor(private _scenarioController: ScenarioService, private _jsonService: JsonService) { }
   entityList: (Monster | Character)[];
 
-  ngOnInit(): void {
-    this.entityList = [];
-    if(this.getCharacters().length > 0) {
-      for(let character of this.getCharacters()) {
-        this.entityList.push(character);
-      }
-    }
+  constructor(public _scenarioController: ScenarioService, private _jsonService: JsonService) { 
+    
+  }
 
-    if(this.getMonsters().length > 0) {
-      for(let monster of this.getMonsters()) {
-        this.entityList.push(monster);
-      }
-    }
+  ngOnInit(): void {
+
+  }
+
+  ngOnChanges() {
+    this._scenarioController.sortEntities(this._scenarioController.entityList);
   }
 
   getCharacters(): Character[] {

@@ -1,10 +1,14 @@
 <div class="ability-card"> 
-    <div class="row wrapper" [ngStyle]="{'background-image': this.getCurrentBackground(this.statCardInitiative), 'border-radius': '10px', 'background-size': '100% 100%'}" >
-        <ng-container *ngFor="let cardLine of this.cardLines">
+    <div class="row wrapper" [ngStyle]="{'background-image': this.getCurrentBackground(this.abilityCard.statCardInitiative), 'border-radius': '10px', 'background-size': '100% 100%'}" >
+        <ng-container *ngFor="let cardLine of this.abilityCard.cardLines">
             <div *ngIf="cardLine.line" class="abilityLine centered row justify-content-center align-self-center">
-                {{cardLine.line}}        
+                <span>                
+                    <mat-icon *ngIf="this.abilityCard.hasElementInLine" svgIcon="{{this.elementIcon}}"></mat-icon><span *ngIf="this.abilityCard.hasElementInLine">:</span>
+                    {{cardLine.line}}
+                </span>     
                 <div *ngIf="cardLine.subtitle && cardLine.line" class="abilitySubtitle row justify-content-center">
                     <span class="justify-content-center centered" *ngFor="let subtitle of cardLine.subtitle">
+                        <mat-icon *ngIf="this.abilityCard.hasElementInSubtitle" svgIcon="{{this.elementIcon}}"></mat-icon><p *ngIf="this.abilityCard.hasElementInSubtitle">:</p>  
                         <span>{{subtitle}}</span>
                     </span>
                 </div>

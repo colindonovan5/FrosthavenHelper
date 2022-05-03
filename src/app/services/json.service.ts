@@ -21,13 +21,20 @@ export class JsonService {
   monsterCardData: MonsterCards[];
   monsterClassData: MonsterClass[];
   scenarioData: ScenarioDetails[];
-
+  monsterNameList: string[] = [];
   constructor() { 
     this.monsterData = MonsterBaseStatsJSON;
     this.bossData = MonsterBaseStatsBossJSON;
     this.monsterCardData = MonsterCardContentJSON;
     this.monsterClassData = MonsterClassContentJSON;
     this.scenarioData = ScenarioListJSON;
+    for(let monster of this.monsterData) {
+      this.monsterNameList.push(monster.name);
+    }
+
+    for(let boss of this.bossData) {
+      this.monsterNameList.push(boss.name);
+    }
 
   }
 

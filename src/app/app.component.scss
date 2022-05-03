@@ -1,5 +1,5 @@
 .stickyTop {
-    position: sticky;
+    position: fixed;
     width: 100%;
     height: 90px;
     top: 0;
@@ -8,7 +8,7 @@
 
 .stickyBottom {
     bottom: 0;
-    position: fixed;
+    position: sticky;
     z-index: 1000;
     width: 100%
 }

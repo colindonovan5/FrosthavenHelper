@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JsonService } from 'src/app/services/json.service';
+import { MonsterAbilityCardService } from 'src/app/services/monster-ability-card.service';
 import { ElementControllerService } from '../../services/element-controller.service';
 import { GloomhavenElement } from '../../types/gloomhaven-element.enum';
 
@@ -9,9 +11,21 @@ import { GloomhavenElement } from '../../types/gloomhaven-element.enum';
 })
 export class TopToolbarComponent implements OnInit {
 
-  constructor(private _elementController: ElementControllerService) { }
+  constructor(
+    private _elementController: ElementControllerService, 
+    private _jsonService: JsonService,
+    private _monsterAbilityCardService: MonsterAbilityCardService) { }
 
   ngOnInit(): void {
+    this.addMonsterByName('Frost Demon');   
+     this.addMonsterByName('The Gloom');
+     this.addMonsterByName('Frost Demon');   
+     this.addMonsterByName('Frost Demon');   
+     this.addMonsterByName('Frost Demon');   
+     this.addMonsterByName('Frost Demon');   
+     this.addMonsterByName('Frost Demon');   
+     this.addMonsterByName('Frost Demon');   
+     this.addMonsterByName('Frost Demon');   
   }
 
   
@@ -29,6 +43,14 @@ export class TopToolbarComponent implements OnInit {
 
   getElementState(element: GloomhavenElement): number {
     return this._elementController.getElement(element);
+  }
+
+  getMonsterNames() {
+    return this._jsonService.monsterNameList;
+  }
+
+  addMonsterByName(monsterName: string) {
+    this._monsterAbilityCardService.addMonsterByName(monsterName);
   }
 
 }

@@ -1014,11 +1014,11 @@
       ],
       "special2": [
         "Teleport",
-        "%attack% +1",
-        "%range% 5",
-        "%poison%",
-        "%wound%",
-        "%stun%"
+        "* %attack% +1",
+        "** %range% 5",
+        "** %poison%",
+        "** %wound%",
+        "** %stun%"
       ],
       "immunities": [
         "%wound%",
@@ -1042,11 +1042,11 @@
       ],
       "special2": [
         "Teleport",
-        "%attack% +1",
-        "%range% 5",
-        "%poison%",
-        "%wound%",
-        "%stun%"
+        "* %attack% +1",
+        "** %range% 5",
+        "** %poison%",
+        "** %wound%",
+        "** %stun%"
       ],
       "immunities": [
         "%wound%",
@@ -1070,11 +1070,11 @@
       ],
       "special2": [
         "Teleport",
-        "%attack% +1",
-        "%range% 5",
-        "%poison%",
-        "%wound%",
-        "%stun%"
+        "* %attack% +1",
+        "** %range% 5",
+        "** %poison%",
+        "** %wound%",
+        "** %stun%"
       ],
       "immunities": [
         "%wound%",
@@ -1098,11 +1098,11 @@
       ],
       "special2": [
         "Teleport",
-        "%attack% +1",
-        "%range% 5",
-        "%poison%",
-        "%wound%",
-        "%stun%"
+        "* %attack% +1",
+        "** %range% 5",
+        "** %poison%",
+        "** %wound%",
+        "** %stun%"
       ],
       "immunities": [
         "%wound%",
@@ -1126,11 +1126,11 @@
       ],
       "special2": [
         "Teleport",
-        "%attack% +1",
-        "%range% 5",
-        "%poison%",
-        "%wound%",
-        "%stun%"
+        "* %attack% +1",
+        "** %range% 5",
+        "** %poison%",
+        "** %wound%",
+        "** %stun%"
       ],
       "immunities": [
         "%wound%",
@@ -1154,11 +1154,11 @@
       ],
       "special2": [
         "Teleport",
-        "%attack% +1",
-        "%range% 5",
-        "%poison%",
-        "%wound%",
-        "%stun%"
+        "* %attack% +1",
+        "** %range% 5",
+        "** %poison%",
+        "** %wound%",
+        "** %stun%"
       ],
       "immunities": [
         "%wound%",
@@ -1182,11 +1182,11 @@
       ],
       "special2": [
         "Teleport",
-        "%attack% +1",
-        "%range% 5",
-        "%poison%",
-        "%wound%",
-        "%stun%"
+        "* %attack% +1",
+        "** %range% 5",
+        "** %poison%",
+        "** %wound%",
+        "** %stun%"
       ],
       "immunities": [
         "%wound%",
@@ -1210,11 +1210,11 @@
       ],
       "special2": [
         "Teleport",
-        "%attack% +1",
-        "%range% 5",
-        "%poison%",
-        "%wound%",
-        "%stun%"
+        "* %attack% +1",
+        "** %range% 5",
+        "** %poison%",
+        "** %wound%",
+        "** %stun%"
       ],
       "immunities": [
         "%wound%",
@@ -1416,7 +1416,8 @@
       "range": 0,
       "special1": [
         "Summon Living Bones",
-        "%attack% -1, Target all adjacent enemies"
+        "* %attack% -1", 
+        "** Target all adjacent enemies"
       ],
       "special2": [
         "Summon Living Corpse",
@@ -1438,7 +1439,8 @@
       "range": 0,
       "special1": [
         "Summon Living Bones",
-        "%attack% -1, Target all adjacent enemies"
+        "* %attack% -1",
+        "** Target all adjacent enemies"
       ],
       "special2": [
         "Summon Living Corpse",
@@ -1460,7 +1462,8 @@
       "range": 0,
       "special1": [
         "Summon Living Bones",
-        "%attack% -1, Target all adjacent enemies"
+        "* %attack% -1",
+        "** Target all adjacent enemies"
       ],
       "special2": [
         "Summon Living Corpse",
@@ -1482,7 +1485,8 @@
       "range": 0,
       "special1": [
         "Summon Living Bones",
-        "%attack% -1, Target all adjacent enemies"
+        "* %attack% -1", 
+        "** Target all adjacent enemies"
       ],
       "special2": [
         "Summon Living Corpse",
@@ -1504,7 +1508,8 @@
       "range": 0,
       "special1": [
         "Summon Living Bones",
-        "%attack% -1, Target all adjacent enemies"
+        "* %attack% -1", 
+        "** Target all adjacent enemies"
       ],
       "special2": [
         "Summon Living Corpse",
@@ -1526,7 +1531,8 @@
       "range": 0,
       "special1": [
         "Summon Living Bones",
-        "%attack% -1, Target all adjacent enemies"
+        "* %attack% -1",
+        "** Target all adjacent enemies"
       ],
       "special2": [
         "Summon Living Corpse",
@@ -1548,7 +1554,8 @@
       "range": 0,
       "special1": [
         "Summon Living Bones",
-        "%attack% -1, Target all adjacent enemies"
+        "* %attack% -1",
+        "** Target all adjacent enemies"
       ],
       "special2": [
         "Summon Living Corpse",
@@ -1570,7 +1577,8 @@
       "range": 0,
       "special1": [
         "Summon Living Bones",
-        "%attack% -1, Target all adjacent enemies"
+        "* %attack% -1", 
+        "** Target all adjacent enemies"
       ],
       "special2": [
         "Summon Living Corpse",
@@ -2139,8 +2147,10 @@
       "attack": 3,
       "range": 0,
       "special1": [
-        "%attack% -1, Target all adjacent enemies",
-        "%attack% +0, %range% 3",
+        "* %attack% -1", 
+        "** Target all adjacent enemies",
+        "* %attack% +0", 
+        "** %range% 3",
         "Hatch eggs"
       ],
       "special2": [
@@ -2163,8 +2173,10 @@
       "attack": 3,
       "range": 0,
       "special1": [
-        "%attack% -1, Target all adjacent enemies",
-        "%attack% +0, %range% 3",
+        "* %attack% -1", 
+        "** Target all adjacent enemies",
+        "* %attack% +0", 
+        "** %range% 3",
         "Hatch eggs"
       ],
       "special2": [
@@ -2187,8 +2199,10 @@
       "attack": 4,
       "range": 0,
       "special1": [
-        "%attack% -1, Target all adjacent enemies",
-        "%attack% +0, %range% 3",
+        "* %attack% -1", 
+        "** Target all adjacent enemies",
+        "* %attack% +0", 
+        "** %range% 3",
         "Hatch eggs"
       ],
       "special2": [
@@ -2211,8 +2225,10 @@
       "attack": 4,
       "range": 0,
       "special1": [
-        "%attack% -1, Target all adjacent enemies",
-        "%attack% +0, %range% 3",
+        "* %attack% -1", 
+        "** Target all adjacent enemies",
+        "* %attack% +0", 
+        "** %range% 3",
         "Hatch eggs"
       ],
       "special2": [
@@ -2235,8 +2251,10 @@
       "attack": 4,
       "range": 0,
       "special1": [
-        "%attack% -1, Target all adjacent enemies",
-        "%attack% +0, %range% 3",
+        "* %attack% -1", 
+        "** Target all adjacent enemies",
+        "* %attack% +0", 
+        "** %range% 3",
         "Hatch eggs"
       ],
       "special2": [
@@ -2259,8 +2277,10 @@
       "attack": 5,
       "range": 0,
       "special1": [
-        "%attack% -1, Target all adjacent enemies",
-        "%attack% +0, %range% 3",
+        "* %attack% -1", 
+        "** Target all adjacent enemies",
+        "* %attack% +0", 
+        "** %range% 3",
         "Hatch eggs"
       ],
       "special2": [
@@ -2283,8 +2303,10 @@
       "attack": 5,
       "range": 0,
       "special1": [
-        "%attack% -1, Target all adjacent enemies",
-        "%attack% +0, %range% 3",
+        "* %attack% -1", 
+        "** Target all adjacent enemies",
+        "* %attack% +0", 
+        "** %range% 3",
         "Hatch eggs"
       ],
       "special2": [
@@ -2307,8 +2329,10 @@
       "attack": 5,
       "range": 0,
       "special1": [
-        "%attack% -1, Target all adjacent enemies",
-        "%attack% +0, %range% 3",
+        "* %attack% -1", 
+        "** Target all adjacent enemies",
+        "* %attack% +0", 
+        "** %range% 3",
         "Hatch eggs"
       ],
       "special2": [

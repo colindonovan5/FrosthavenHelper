@@ -4,5 +4,6 @@ export enum GloomhavenElement {
     Wind,
     Earth,
     Light,
-    Dark
+    Dark,
+    Any
 }

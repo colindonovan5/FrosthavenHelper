@@ -13,6 +13,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TopToolbarComponent } from './components/top-toolbar/top-toolbar.component';
 import { BottomToolbarComponent } from './components/bottom-toolbar/bottom-toolbar.component';
 import { MonsterAbilityCardComponent } from './components/monster-ability-card/monster-ability-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MonsterStatCardComponent } from './components/monster-stat-card/monster-stat-card.component';
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { MonsterAbilityCardComponent } from './components/monster-ability-card/m
     TopToolbarComponent,
     BottomToolbarComponent,
     MonsterAbilityCardComponent,
+    MonsterStatCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { MonsterAbilityCardComponent } from './components/monster-ability-card/m
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

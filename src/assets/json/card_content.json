@@ -465,7 +465,7 @@
         "rules": [
           "* %heal% 3",
           "** Self",
-          "* %earth%%use_element%: <span class='small'>%immobilize% Target all enemies within %range% 3</span>"
+          "* %earth_useelement%: %immobilize% Target all enemies within %range% 3"
         ]
       },
       {
@@ -491,7 +491,7 @@
         "rules": [
           "* %attack% +0",
           "** %range% 4",
-          "** %earth%%use_element%: %target% 2"
+          "** %earth_useelement%: %target% 2"
         ]
       },
       {
@@ -510,7 +510,7 @@
           "* %move% -1",
           "* %attack% -1",
           "** Target all adjacent enemies",
-          "* %earth%%use_element%: %push% 1"
+          "* %earth_useelement%: %push% 1"
         ]
       },
       {
@@ -519,7 +519,7 @@
         "rules": [
           "* %move% +1",
           "* %attack% +0",
-          "** %air%%use_element%: -2 %attack%"
+          "** %wind%%use_element%: -2 %attack%"
         ]
       },
       {
@@ -527,8 +527,8 @@
         "shuffle": false,
         "rules": [
           "* %move% +0",
-          "* %attack% -1 <div class='collapse'>%aoe-4-with-black%</div>",
-          "* %any%%use_element%: %earth%"
+          "* %attack% -1 %aoe-4-with-black%",
+          "* %any_useelement%: %earth%"
         ]
       }
     ]
@@ -562,7 +562,7 @@
         "rules": [
           "* %attack% +0",
           "** %range% +0",
-          "** %fire%%use_element%:  %aoe-circle%"
+          "** %fire_useelement%:  %aoe-circle%"
         ]
       },
       {
@@ -570,7 +570,9 @@
         "shuffle": false,
         "rules": [
           "* %attack% +0 %aoe-line-3-with-black%",
-          "** <table align='center'><tr><td>%fire%%use_element%:</td> <td> +1 %attack% <br> %wound% </td> </tr> </table>"
+          "** %fire_useelement%:",
+          "** +1 %attack%", 
+          "** %wound%"
         ]
       },
       {
@@ -589,14 +591,14 @@
         "rules": [
           "* %attack% +0",
           "** Target all adjacent enemies",
-          "** %ice%%use_element%:Flame Demon suffers 1 damage."
+          "** %ice_useelement%:Flame Demon suffers 1 damage."
         ]
       },
       {
         "initiative": "30",
         "shuffle": true,
         "rules": [
-          "* <table align='center'><tr> <td>  %fire%%use_element%: </td> <td> <span class='small'>All adjacent enemies<br/>suffer 2 damage.</span> </td> </tr> </table>",
+          "* %fire_useelement%: All adjacent enemies suffer 2 damage.",
           "* %move% +0",
           "* %attack% -2",
           "** %range% +0",
@@ -609,8 +611,8 @@
         "shuffle": false,
         "rules": [
           "* %move% -1",
-          "* <span class='small'> Create a 4 damage trap in an adjacent empty hex closest to an enemy </span>",
-          "* %any%%use_element%: %fire%"
+          "* Create a 4 damage trap in an adjacent empty hex closest to an enemy",
+          "* %any_useelement%: %fire%"
         ]
       }
     ]
@@ -624,7 +626,8 @@
         "rules": [
           "* %immobilize%",
           "** Target all enemies within %range% 2",
-          "* %ice%%use_element%: <span class='small'>%heal% 3<br/>Self</span>"
+          "* %ice_useelement%: %heal% 3",
+          "** Self"
         ]
       },
       {
@@ -650,7 +653,7 @@
           "* %move% -1",
           "* %attack% +0",
           "** %range% 2",
-          "** %ice%%use_element%: +2 %attack%, +1 %range%"
+          "** %ice_useelement%: +2 %attack%, +1 %range%"
         ]
       },
       {
@@ -678,7 +681,7 @@
           "* %move% -1",
           "* %attack% -1",
           "** %pierce% 3",
-          "* %any%%use_element%: %ice%"
+          "* %any_useelement%: %ice%"
         ]
       },
       {
@@ -687,7 +690,7 @@
         "rules": [
           "* %shield% 2",
           "* %move% +1",
-          "* %fire%%use_element%: <span class='small'>Frost Demon suffers 1 damage</span>"
+          "* %fire_useelement%: Frost Demon suffers 1 damage"
         ]
       }
     ]
@@ -900,7 +903,7 @@
         "rules": [
           "* %move% -1",
           "* %attack% +0 %aoe-line-4-with-black%",
-          "** %dark%%use_element%: Perform \"%heal% 2, Self\" </br>for each target damaged"
+          "** %dark_useelement%: Perform %heal% 2, Self for each target damaged"
         ]
       },
       {
@@ -910,7 +913,7 @@
           "* %move% +0",
           "* %attack% -1",
           "** %target% 2",
-          "** %dark%%use_element%: +2 %attack%, %disarm%"
+          "** %dark_useelement%: +2 %attack%, %disarm%"
         ]
       },
       {
@@ -927,8 +930,8 @@
     ]
   },
   {
-    "name": "Deep Terror",
-    "Hound": [
+    "name": "Hound",
+    "cards": [
       {
         "initiative": "06",
         "shuffle": false,
@@ -1047,7 +1050,9 @@
         "rules": [
           "* %move% +0",
           "* %attack% -1",
-          "** %range% +0, %target% 2, %poison%"
+          "** %range% +0", 
+          "** %target% 2", 
+          "** %poison%"
         ]
       },
       {
@@ -1065,7 +1070,9 @@
         "rules": [
           "* %move% +0",
           "* %attack% -1",
-          "** %range% +0, %target% 2, %curse%"
+          "** %range% +0",
+          "** %target% 2",
+          "** %curse%"
         ]
       },
       {
@@ -1304,7 +1311,7 @@
           "* %move% -1",
           "* %attack% +1",
           "** %range% +0",
-          "** %ice%%use_element%: %stun%"
+          "** %ice_useelement%: %stun%"
         ]
       }
     ]
@@ -1317,7 +1324,7 @@
         "shuffle": true,
         "rules": [
           "* %shield% 1",
-          "** %ice%%use_element%: %shield% 2 instead",
+          "** %ice_useelement%: %shield% 2 instead",
           "* %wound%",
           "** Target all adjacent enemies"
         ]
@@ -1367,7 +1374,7 @@
         "initiative": "41",
         "shuffle": false,
         "rules": [
-          "* %ice%%use_element%: %strengthen%",
+          "* %ice_useelement%: %strengthen%",
           "** Self",
           "* %move% +0",
           "* %attack% -1",
@@ -1404,7 +1411,7 @@
         "rules": [
           "* %move% +1",
           "* %attack% -1",
-          "* %dark%%use_element%: %invisible%",
+          "* %dark_useelement%: %invisible%",
           "** Self"
         ]
       },
@@ -1424,7 +1431,7 @@
           "* %attack% -2",
           "** %range% 3",
           "** %target% 3",
-          "** %dark%%use_element%: %muddle%"
+          "** %dark_useelement%: %muddle%"
         ]
       },
       {
@@ -1433,7 +1440,7 @@
         "rules": [
           "* %move% -1",
           "* %attack% +1",
-          "** %dark%%use_element%: +2 %attack%"
+          "** %dark_useelement%: +2 %attack%"
         ]
       },
       {
@@ -1462,8 +1469,8 @@
         "rules": [
           "* %move% +0",
           "* %attack% -1",
-          "* <span class='small'>All adjacent enemies and allies suffer 1 damage.</span>",
-          "* <span class='small'>%any%%use_element%: %dark%</span>"
+          "* All adjacent enemies and allies suffer 1 damage.",
+          "* %any_useelement%: %dark%"
         ]
       }
     ]
@@ -1634,7 +1641,7 @@
         "rules": [
           "* %push% 2",
           "** Target all adjacent enemies",
-          "** %air%%use_element%: %push% 4 instead",
+          "** %wind%%use_element%: %push% 4 instead",
           "* %attack% +1",
           "** %range% +1"
         ]
@@ -1644,7 +1651,7 @@
         "shuffle": false,
         "rules": [
           "* Summon normal Wind Demon",
-          "* %air%"
+          "* %wind%"
         ]
       },
       {
@@ -1673,9 +1680,9 @@
         "rules": [
           "* %attack% +0",
           "** %range% +0",
-          "** %ice%%use_element%: +2 %attack%, %immobilize%",
+          "** %ice_useelement%: +2 %attack%, %immobilize%",
           "* %retaliate% 2",
-          "* %air%"
+          "* %wind%"
         ]
       },
       {
@@ -1685,8 +1692,8 @@
           "* %shield% 4",
           "* %heal% 2",
           "** %range% 3",
-          "** %ice%%use_element%: +3 %heal%",
-          "* %air%%use_element%: %attack% +0"
+          "** %ice_useelement%: +3 %heal%",
+          "* %wind%%use_element%: %attack% +0"
         ]
       },
       {
@@ -1698,7 +1705,7 @@
           "* %move% +0",
           "* %attack% -1",
           "** %range% +0",
-          "* %air%"
+          "* %wind%"
         ]
       },
       {
@@ -1738,7 +1745,7 @@
           "* %move% +1",
           "* %attack% -1",
           "** Target all adjacent enemies",
-          "* %fire%%use_element%: %retaliate% 3"
+          "* %fire_useelement%: %retaliate% 3"
         ]
       },
       {
@@ -1758,7 +1765,7 @@
         "rules": [
           "* %move% +0",
           "* %attack% -1 %aoe-line-4-with-black% ",
-          "** %earth%%use_element%: +2 %attack%, %immobilize%"
+          "** %earth_useelement%: +2 %attack%, %immobilize%"
         ]
       },
       {
@@ -1766,8 +1773,8 @@
         "shuffle": false,
         "rules": [
           "* All enemies suffer 2 damage.",
-          "* %fire%%use_element%: %wound% all enemies",
-          "* %earth%%use_element%: %disarm% all enemies"
+          "* %fire_useelement%: %wound% all enemies",
+          "* %earth_useelement%: %disarm% all enemies"
         ]
       },
       {
@@ -1776,7 +1783,7 @@
         "rules": [
           "* %heal% 4",
           "** %range% 3",
-          "** %earth%%use_element%: %target% 3"
+          "** %earth_useelement%: %target% 3"
         ]
       },
       {
@@ -2169,7 +2176,7 @@
           "* %move% -1",
           "* %attack% -1",
           "** Target all adjacent enemies",
-          "* %dark%%use_element%: %muddle%",
+          "* %dark_useelement%: %muddle%",
           "** Self"
         ]
       },
@@ -2180,7 +2187,7 @@
           "* %move% +0",
           "* %attack% +0",
           "** %range% 3",
-          "* %any%%use_element%: %light%"
+          "* %any_useelement%: %light%"
         ]
       }
     ]
@@ -2196,7 +2203,8 @@
           "** %range% +0",
           "* %heal% 1",
           "** Self",
-          "* %air%%use_element%: %invisible%<br/><span class='small'>Self</span>"
+          "* %wind%%use_element%: %invisible",
+          "** %Self"
         ]
       },
       {
@@ -2206,7 +2214,7 @@
           "* %move% +0",
           "* %attack% +0",
           "** %range% +0, %pull% 1",
-          "* %air%"
+          "* %wind%"
         ]
       },
       {
@@ -2216,7 +2224,7 @@
           "* %move% +0",
           "* %attack% +0",
           "** %range% +0, %pull% 1",
-          "* %air%"
+          "* %wind%"
         ]
       },
       {
@@ -2226,7 +2234,7 @@
           "* %move% +0",
           "* %attack% -1",
           "** %range% +0, %target% 2",
-          "** %air%%use_element%: %push% 2"
+          "** %wind%%use_element%: %push% 2"
         ]
       },
       {
@@ -2234,8 +2242,10 @@
         "shuffle": false,
         "rules": [
           "* %move% +0",
-          "* %attack% +0 <div style='display: inline-block; width: 0; margin-top: -1.5em; vertical-align: bottom'>%aoe-4-with-black%</div>",
-          "** %air%%use_element%: +1 Attack <div style='display: inline-block; margin-right: -3em'>%aoe-circle-with-side-black%</div>"
+          "* %attack% +0 %aoe-4-with-black%",
+          "** %wind%%use_element%:", 
+          "** +1 Attack",
+          "** %aoe-circle-with-side-black%"
         ]
       },
       {
@@ -2245,7 +2255,7 @@
           "* %move% -1",
           "* %attack% +1",
           "** %range% +0",
-          "** %air%%use_element%: %target% 2"
+          "** %wind%%use_element%: %target% 2"
         ]
       },
       {
@@ -2256,7 +2266,7 @@
           "** Target all adjacent enemies",
           "* %attack% +0",
           "** %range% +0",
-          "** %earth%%use_element%: -2 %range%"
+          "** %earth_useelement%: -2 %range%"
         ]
       },
       {
@@ -2267,7 +2277,7 @@
           "* %move% -1",
           "* %attack% -1",
           "** %range% +0",
-          "* %any%%use_element%: %air%"
+          "* %any_useelement%: %wind%"
         ]
       }
     ]

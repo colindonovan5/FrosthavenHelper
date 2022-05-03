@@ -15,7 +15,6 @@ export class MonsterCardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.monster);
 
   }
 }

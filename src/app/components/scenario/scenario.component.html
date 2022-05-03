@@ -1,5 +1,5 @@
 <div class="scenarioContainer row">    
-    <div class="row justify-content-center" *ngFor="let entity of this.entityList">
+    <div class="row justify-content-center" *ngFor="let entity of this._scenarioController.entityList">
         <div class="col-lg-8" *ngIf="isMonster(entity)">
             <monster-card [monster]="entity"></monster-card>
         </div>

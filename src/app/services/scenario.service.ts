@@ -14,21 +14,40 @@ export class ScenarioService {
   scenarioRound: number;
   characters: Character[];
 
+  entityList: (Monster | Character)[] = [];
   constructor(private _monsterService: MonsterService, private _characterService: CharacterService) {
-    this.scenarioDifficulty = 7;
+    this.scenarioDifficulty = 0;
     this.scenarioRound = 0;
     this.characters = _characterService.characters;
     this.scenario = new Scenario();
 
-    this.addMonsterByName("City Guard");
-    this.addMonsterByName("Cave Bear");
-    this.addMonsterByName("Ooze");
-    this.addMonsterByName("Bandit Archer");
-    this.addMonsterByName("Giant Viper");
+    let character: Character = new Character();
+    character.initiative = 42;
+    this.characters.push(character);
 
+    this.entityList = [];
+    if(this.characters.length > 0) {
+      for(let character of this.characters) {
+        this.entityList.push(character);
+      }
+    }
+    if(this.scenario.scenarioMonsters.length > 0) {
+      for(let monster of this.scenario.scenarioMonsters) {
+        this.entityList.push(monster);
+      }
+    }
+    
   }
 
+  updateEntityList(entity: (Monster|Character)) {
+    this.entityList.push(entity);
+  }
 
+  sortEntities(entityList: (Monster | Character)[]) {
+    this.entityList.sort((a, b) => { 
+      return a.initiative - b.initiative
+    });
+  }
 
   getGoldValue(): number {
     if(this.scenarioDifficulty == 0 || this.scenarioDifficulty == 1) {

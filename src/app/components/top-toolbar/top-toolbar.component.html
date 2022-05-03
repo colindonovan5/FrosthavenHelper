@@ -1,9 +1,18 @@
 <div>
     <div>
       <mat-toolbar class="toolbar" color="primary">
-        <button class="menuIconButton" mat-icon-button aria-label="Menu icon">
+        <button class="menuIconButton" [matMenuTriggerFor]="menu" mat-icon-button aria-label="Menu icon">
           <mat-icon class="menuIcon">menu</mat-icon>
         </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="monsterMenu">
+            <mat-icon>dialpad</mat-icon>
+            <span>Add Monster</span>
+          </button>
+        </mat-menu>
+        <mat-menu #monsterMenu="matMenu">
+          <button *ngFor="let monster of this.getMonsterNames()" (click)="addMonsterByName(monster)" mat-menu-item>{{monster}}</button>
+        </mat-menu>
         <span class="spacer"></span>
         <div class="overlay">
           <img 
