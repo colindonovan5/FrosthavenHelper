@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ElementControllerService } from './services/element-controller.service';
+import { ScenarioService } from './services/scenario.service';
 import { GloomhavenElement } from './types/gloomhaven-element.enum';
 
 @Component({
@@ -10,7 +11,7 @@ import { GloomhavenElement } from './types/gloomhaven-element.enum';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, private _scenarioService: ScenarioService) {
     this.matIconRegistry.addSvgIcon(
       'fire_useelement',
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/elements/fireIconUse.svg')
@@ -41,6 +42,11 @@ export class AppComponent {
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/elements/sunIconUse.svg')
     );
   }
+
+  haveManyEntities() {
+    return this._scenarioService.entityList.length > 3;
+  }
+
   title = 'Frosthaven Helper';
 
 

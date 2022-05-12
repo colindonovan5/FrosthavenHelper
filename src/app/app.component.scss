@@ -7,10 +7,17 @@
 }
 
 .stickyBottom {
-    bottom: 0;
     position: sticky;
+    width: 100%;
+    bottom: 0;
     z-index: 1000;
-    width: 100%
+}
+
+.fixedBottom {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
 }
 
 .page {

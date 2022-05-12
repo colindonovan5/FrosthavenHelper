@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class MonsterStatCardComponent implements OnInit {
 
   constructor() { }
-  getCurrentBackground(initiative: string) {
-    return "url('../../../assets/MonsterAbilityCard/MonsterAbilityCard" + initiative + ".png')";
+
+  getCurrentBackground() {
+    return "url('../../../assets/MonsterStatCard/MonsterCard.png')";
   }
+
   ngOnInit(): void {
   }
 

@@ -4,7 +4,7 @@
   </div>
   <br><br><br><br>
   <router-outlet></router-outlet>
-  <div class="stickyBottom">
+  <div [ngClass]="{'stickyBottom': haveManyEntities(), 'fixedBottom': !haveManyEntities()}">
     <bottom-toolbar></bottom-toolbar>
   </div>
 </div>

@@ -17,15 +17,7 @@ export class TopToolbarComponent implements OnInit {
     private _monsterAbilityCardService: MonsterAbilityCardService) { }
 
   ngOnInit(): void {
-    this.addMonsterByName('Frost Demon');   
-     this.addMonsterByName('The Gloom');
-     this.addMonsterByName('Frost Demon');   
-     this.addMonsterByName('Frost Demon');   
-     this.addMonsterByName('Frost Demon');   
-     this.addMonsterByName('Frost Demon');   
-     this.addMonsterByName('Frost Demon');   
-     this.addMonsterByName('Frost Demon');   
-     this.addMonsterByName('Frost Demon');   
+    this.addMonsterByName('Frost Demon');     
   }
 
   
